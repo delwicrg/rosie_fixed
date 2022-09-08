@@ -23,24 +23,38 @@ nav, footer {
   background-color: #444;
 }
 
+/*
 
 nav{
   display: flex;
+  justify-content: space-between;
 }
+*/
+
+/* declare flex on parent element and its direct children become flex items 
+  if you make nav flex element, li will not be flex because they are not direct elements
+  make ul flex 
+*/
 
 footer {
   text-align: center;
   padding: 1em 0 .3em 0;
   color: #D0D0D0;
 }
+
 /*-- Main Menu Styles--*/
 nav ul {
+  /* row is default property for flow direction */
   display: flex;
+  flex-direction: row;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between ; /* other options - space-around, space-evenly */
   list-style: none;
-  padding: 0em;
+  margin-top: 0; /* added to get rid of space at the top */
+  padding: 1em;
+  /* padding: 0em;*/
 }
+
 
 
 nav a:link, nav a:visited {
