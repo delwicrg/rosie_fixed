@@ -12,7 +12,7 @@ img {
   align-items: center;
 }
 body {
-  color: #444;
+  color: #01071b; /* new color */
   font-size: 1.6rem;
   font-family: 'Gentium Book Basic', serif;
 }
@@ -20,7 +20,7 @@ p {
   margin-bottom: .67em;
 }
 nav, footer {
-  background-color: #444;
+  background-color: #021040; /* new color */
 }
 
 /*
@@ -39,7 +39,8 @@ nav{
 footer {
   text-align: center;
   padding: 1em 0 .3em 0;
-  color: #D0D0D0;
+  color: #e1a765; /* new color */
+
 }
 
 /*-- Main Menu Styles--*/
@@ -58,15 +59,15 @@ nav ul {
 
 
 nav a:link, nav a:visited {
-  color: #D0D0D0;
+  color: #e1a765; /* new color */
   text-decoration: none;
 }
 nav a:hover, nav a:active  {
-  color: #F0F0F0;
+  color: #edc89e; /* new color */
   text-decoration: underline;
 }
 nav a.active {
-  color: #F0F0F0;
+  color: #edc89e; /* new color */
 }
 /*-- Hero Unit Styles--*/
 header {
@@ -85,13 +86,15 @@ header img {
 header h1 {
   margin: 0 auto;
   padding: 0 auto;
+  font-weight: lighter; /* is this ok to add to have it look like yours?*/
   text-align: center; /* to center the header text */
+  /* color: #060e26; /* new color */
 }
 
 .small {
   margin-top: 1em;
   font-size: 1em; /* different font size */
-  color: #888;
+  color: #ffb400; /* new color */
   /* start of add */
   font-family: 'Lato', sans-serif;
   font-weight: 900;
@@ -112,7 +115,12 @@ article figure {
   float: right;
 }
 article figcaption {
-  font-size: inherit;
+  /* font-size: inherit; want to make smaller font */
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  color: #01071ba6; /* new color */
+
 }
 .pagination {
   margin-top: 2em;
@@ -124,22 +132,29 @@ article figcaption {
   justify-content: space-evenly;
 }
 a.button {
-  border: 2px solid #888;
+  color: #ff8800; /* new color */
+  border: 2px solid #ff880087; /* new color */
   padding: .4em 1em .4em 1em;
   text-decoration: none;
-  color: #888;
   border-radius: 200px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 80%;
 }
 a.button:hover, a.button:active {
-  border: 1px solid #444;
+  border: 1px solid #d57609f9; /* new color */
   text-decoration: none;
-  color: #222;
+  color: #d57609; /* new color */
+
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {
   header {width: 96%;}
   article {width: 96%;}
 }
+
+.dropcap{
+  font-size: 100px;
+}
+
+/*   color: #EAE287; /* new font color */ 
