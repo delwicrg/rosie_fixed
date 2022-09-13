@@ -49,7 +49,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-between ; /* other options - space-around, space-evenly */
+  justify-content: space-evenly ; /* other options - space-around, space-evenly */
   list-style: none;
   margin: 0 auto; /* added to get rid of space at the top*/
   padding: 1em;
@@ -155,6 +155,12 @@ a.button:hover, a.button:active {
 
 .dropcap{
   font-size: 100px;
+  line-height: 2.4rem;
 }
 
 /*   color: #EAE287; /* new font color */ 
+
+.firstpar{
+  font-size: 2.4rem;
+  display: block flex;
+}
